@@ -1,23 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
+import Banner from './Banner';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>Suica  🍉</h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          onaka ga suita
-        </a>
-      </header>
-    </div>
-  );
+  return <Banner/>
 }
 
 export default App;
