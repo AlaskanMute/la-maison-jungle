@@ -1,3 +1,5 @@
+// plantList.js
+
 export const plantList = [
 	{
 		name: 'monstera',

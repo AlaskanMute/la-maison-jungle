@@ -1,3 +1,5 @@
+// ShoppingList.js
+
 import { plantList } from '../datas/plantList'
 import '../styles/ShoppingList.css'
 

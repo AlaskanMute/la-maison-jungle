@@ -1,3 +1,5 @@
+// App.js
+
 import Banner from './Banner';
 import Cart from './Cart'
 import ShoppingList from './ShoppingList'

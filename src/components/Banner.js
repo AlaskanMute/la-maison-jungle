@@ -1,3 +1,5 @@
+// Banner.js
+
 import '../styles/Banner.css'
 import logo from '../assets/logo.png'
 
