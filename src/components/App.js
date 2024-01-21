@@ -3,22 +3,28 @@ import logo from '../assets/logo.png'
 import Banner from './Banner';
 import Cart from './Cart'
 import ShoppingList from './ShoppingList'
-import QuestionForm from './QuestionForm';
+/*import QuestionForm from './QuestionForm';*/
 import Footer from './Footer';
+import React, { useState } from 'react';
+import '../styles/Layout.css'
+
 
 function App() {
-  return  (
-          <div>
+        const [cart, updateCart] = useState([])
+        
+        return (
+            <div>
                 <Banner>
-                        <img src={logo} alt='La maison jungle' className='lmj-logo' />
-				                <h1 className='lmj-title'>La maison jungle</h1>
+                    <img src={logo} alt='La maison jungle' className='lmj-logo' />
+                    <h1 className='lmj-title'>La maison jungle</h1>
                 </Banner>
-                <Cart/> 
-                <ShoppingList/>
-                <QuestionForm/>
-                <Footer/>
-          </div>
-  )
-}
-
-export default App;
+                <div className='lmj-layout-inner'>
+                    <Cart cart={cart} updateCart={updateCart} />
+                    <ShoppingList cart={cart} updateCart={updateCart} />
+                </div>
+                <Footer />
+            </div>
+        )
+    }
+    
+    export default App
