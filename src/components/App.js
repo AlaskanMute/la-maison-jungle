@@ -5,7 +5,7 @@ import Cart from './Cart'
 import ShoppingList from './ShoppingList'
 /*import QuestionForm from './QuestionForm';*/
 import Footer from './Footer';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import '../styles/Layout.css'
 
 
